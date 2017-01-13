@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction</title>
+    
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    
+    <div data-sticky-container>
+  <div class="sticky is-stuck" id="top-bar" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="topAnchorExample" data-btm-anchor="bottomOfContentId:bottom">
+    <nav data-magellan>
+      <ul class="dropdown menu" id="top-bar" data-dropdown-menu>
+              <li id="title"><a href="index.html">AUGMENTED REALITY</a></li>
+              <li class="active"><a href="introduction.html">Introduction</a></li>
+            <li><a href="howitworks.html">How It Works</a>
+                <ul class="menu">
+                    <li><a href="howitworks.html#Components">Components Of AR</a></li>
+                    <li><a href="howitworks.html#Achieving AR">Technical Aspects</a></li>
+                    <li><a href="howitworks.html#Modalities">Medical Image Modalities</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="surgery.html">Surgery</a>
+                <ul class="menu">
+                    <li><a href="surgery.html#Guidance">Surgical Guidance</a></li>
+                    <li><a href="surgery.html#InvasiveSurgery">Minimally Invasive Surgery</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="non-surgery.html">Non-Surgery</a>
+                <ul class="menu">
+                    <li><a href="non-surgery.html#Education">Medical Education</a></li>
+                <li><a href="non-surgery.html#Psychological">Psychological Treatments</a></li>
+                <li><a href="non-surgery.html#Physical Trauma">Physical Rehabilitation</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="technical.html">Technical Challenges</a>
+                <ul class="menu">
+                <li><a href="technical.html#SIT">Surgical Instrument Tracking</a></li>
+                <li><a href="technical.html#IR">Image Registration</a></li>
+                <li><a href="technical.html#STR">Soft Tissue Registration</a></li>
+                </ul>
+            </li>
+              <li><a href="references.html">References</a></li>
+          </ul>
+    </nav>
+   </div>
+    </div>
+    
+        <div id="mainbody">
+            <h1><strong>INTRODUCTION</strong></h1>
+            <hr>
+            
+            <section> 
+            <a name="AR"><h3><strong>What is AR?</strong></h3></a>
+            <hr>
+            <p>Augmented reality (AR) is the <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="the placement of an image or video on top of an object">superimposition</span> of the virtual onto a user’s perception of reality.  This superimposition allows for the virtual world to react to real world stimuli in real time.  (Azuma R.T., 1997) Many modern devices already implement these elements in everyday life. The average smartphone has sensors such as an accelerometer which allows real-time phone movements to be registered and represented alongside the virtual in an interactive manner. For example, Snapchat’s new filters use facial recognition software to capture the location and movement of faces in the camera’s view then superimposes images or animations onto them. (See Figure 1) Another app Layar allows users to superimpose layers onto the real-world altering the user’s perception of reality and providing them with additional information. (See Figure 2) The Nintendo 3DS also uses its sensors to improve user experience and create a more interactive gaming environment. (See Figure 3)
+            </p>
+        
+            <center>
+            <div class="container">
+            <video controls width = "600" height = "450" src="11%20snapchat.mp4"></video> 
+            <h5 id="note">Figure 1: Snapchat Video (Snapchat's Future Lies in Augmented Reality .2015) </h5>
+            </div>
+            
+            <div class="container">
+            <video controls width = "600" height = "450" src="Trimmed%20Video%20Layar.mp4">
+            </video>
+            <h5 id="note">Figure 2: Layar Video (Layar. 2011)</h5>
+             </div>
+                  
+            <div class="container">
+            <img width = "600" height = "450" src= "img/5480085507_03f4fc9cdb_b.jpg">                <h5 id="note">Figure 3: Nintendo 3DS AR (Nintendo 3DS, AR Games n.d)</h5>
+            </div>
+            </center>
+        
+        <p>AR technology has huge potential, it could simplify complex tasks, enhance human computer interaction and increase efficiency by effective processing data and representing it in an accessible, easily understood visualisation for users. These benefits would be indispensable in a large variety of applications including for entertainment, education, medicine and military. (Thomas, B.H. et al., 2009) This website will focus on augmented reality in medicine.</p>
+    </section>
+    
+    <section> 
+            <a name="AR"><h3><strong>AR in Medicine</strong></h3></a>
+            <hr>
+        
+            <p>Applications of AR in medicine can be split into surgical and non-surgical implementations. Currently, AR development is heavily research based and especially for applications in surgery rarely results in complete implementation strategies. Instead, research in smaller component areas that could then contribute to improving accuracy, efficiency and ultimately a viable AR system is more common. This trend is encouraged by the level of customisation required by medical procedures in terms of potential AR implementations. It's better to improve the components so that they can be combined appropriately to suit different surgeries, rather than create a ‘perfect’ end-to-end implementation. For more information on the components of AR implementations see <a href = "howitworks.html#Components">here</a>, or for a more technical understanding of how AR is achieved see <a href = "howitworks.html#Achieving AR">here</a>.</p>
+        
+            <p>In general, surgical implementations of AR aim to augment image guided surgeries by incorporating AR into surgical guidance and navigation techniques. The goal is to increase the accuracy and efficiency of the surgeon by providing them with access to information that would otherwise be unavailable or not easily accessible in the operating room. In addition, it could improve patient care and recovery rates by removing the necessity for invasive surgery to facilitate better views of the surgical field. For more information on AR in surgical guidance for different surgical specialties see <a href = "surgery.html#Guidance">here</a>.</p>
+        
+            <p>Non-surgical implementations of AR general have a higher tolerance for mistakes and have lower-standards for computational efficiency and real-time representation. As a result, they are the areas that are more likely to replace the current standards in the near future. One of the most promising areas is <a href = "non-surgery.html#Education">AR in Medical Education</a>, whether it be training for surgical skills or simpler clinical skills. Other potential applications make use of AR in a completely different way, hoping to use the ‘virtual’ element to influence the psyche and aid mental development and changes (see <a href = "non-surgery.html#Psychological">Psychological Treatments</a>) or using AR to track patient progress and aid physical development (see <a href = "non-surgery.html#Physical Trauma">Physical Rehabilitation</a>).</p>
+        
+            <p>Overall, while AR in medicine has many potential uses, it’s standards for accuracy, stability and real-time accessibility that is much higher than in other fields. Even in normal medicine, tolerance for mistakes is low as demonstrated by the high standards for the training of medical personnel. Therefore, in the development of AR for medicine, the technological challenges faced by AR becomes even more pronounced.  For more information, see <a href="technical.html">here</a>. As such AR in medicine remains much further in the future than in other fields such as entertainment where we are already seeing implementations become reach everyday consumers.</p>
+        </section>
+        </div>
+    
+      
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/vendor/what-input.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

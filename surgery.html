@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surgery</title>
+    
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+        <div data-sticky-container>
+  <div class="sticky is-stuck" id="top-bar" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="topAnchorExample" data-btm-anchor="bottomOfContentId:bottom">
+    <nav data-magellan>
+      <ul class="dropdown menu" id="top-bar" data-dropdown-menu>
+              <li id="title"><a href="index.html">AUGMENTED REALITY</a></li>
+              <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="howitworks.html">How It Works</a>
+                <ul class="menu">
+                    <li><a href="howitworks.html#Components">Components Of AR</a></li>
+                    <li><a href="howitworks.html#Achieving AR">Technical Aspects</a></li>
+                    <li><a href="howitworks.html#Modalities">Medical Image Modalities</a></li>
+                </ul>
+            </li>
+              
+              <li class="active"><a href="surgery.html">Surgery</a>
+                <ul class="menu">
+                    <li><a href="surgery.html#Guidance">Surgical Guidance</a></li>
+                    <li><a href="surgery.html#InvasiveSurgery">Minimally Invasive Surgery</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="non-surgery.html">Non-Surgery</a>
+                <ul class="menu">
+                    <li><a href="non-surgery.html#Education">Medical Education</a></li>
+                <li><a href="non-surgery.html#Psychological">Psychological Treatments</a></li>
+                <li><a href="non-surgery.html#Physical Trauma">Physical Rehabilitation</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="technical.html">Technical Challenges</a>
+                <ul class="menu">
+                <li><a href="technical.html#SIT">Surgical Instrument Tracking</a></li>
+                <li><a href="technical.html#IR">Image Registration</a></li>
+                <li><a href="technical.html#STR">Soft Tissue Registration</a></li>
+                </ul>
+            </li>
+              <li><a href="references.html">References</a></li>
+          </ul>
+    </nav>
+   </div>
+    </div>
+        <div id="mainbody">
+            <h1><strong>SURGERY</strong></h1>
+          <hr>
+          
+          <section id="Guidance"> 
+            <a name="Guidance"><h3><strong>Surgical Guidance</strong></h3></a>
+            <hr>
+            
+            <p>In surgery, AR is a natural extension to the image-guidance paradigm. (Vidal et al. 2006). In Image Guided Surgery (IGS), the surgeon’s view of the operating field is augmented by the addition of computer generated data. This can allow the intra-operative use of preoperative tomographic data to be used in conjunction with the surgeon’s perception of patient anatomy in order to enhance precision, reduce the surgeon’s cognitive effort and reduce the risk of human error. (Stoyanov et al. 2003) Augmented medical imaging environments represent an advanced form of image guidance which enable physicians to look beyond the surface of the patient and ‘see’ anatomy and surgical instruments otherwise hidden from direct view. (Linte et al. 2010)</p>
+              
+            <p>In Neurosurgery, the surgical anatomy i.e. the skull and brain is more fixed in space than abdominal organs are allowing for feasible image registration. In addition, resecting the smallest possible volume of brain tissue while fully removing a tumour is a key priority, therefore AR applications in neurosurgery are both viable and greatly needed. (Shuhaiber n.d.) Already a heavily image guided surgical specialty, an AR environment would represent a navigation system superimposed onto the operating field. This is key to reducing the extent of surgical intervention as opening up a skull carries heavy risk.</p>
+           
+            <br>
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/tJTR4ty0BW4" frameborder="0" allowfullscreen></iframe>
+            <p id="note">Image Guided Surgery for Brain Tumours (Mayfield Brain & Spine, 2013)</p>
+            </center>
+            <br>  
+              
+            <p>In studies of implementations of AR in surgical oncology and resection of tumours, AR has shown promise in helping the surgeon resect in a more objective and accurate process, mixing risk of relapse and maximising tissue conservation. (Shuhaiber n.d.)</p>
+              
+            <p><span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="surgical treatment of organs inside the thorax (the chest)—generally treatment of conditions of the heart (heart disease) and lungs (lung disease)">Cardiovascular</span> surgery is one of the more challenging areas for AR implementations as the dynamic nature of the heart muscle stretches the capabilities of current image registration techniques. However, it is also an area where minimising invasiveness would have large benefits in terms of reducing risk and recovery times. Existing challenges to normal cardiac interventions include limited access routes, restricted visualisation and surgical instrument manipulation and complications relating to stabilising heart motion and operating on a soft tissue organ that is in continuous motion. (Linte et al. 2010)</p>
+              
+            <p>In these areas, AR implementations have significant potential for aiding surgeons, however current applications are limited to pre-operative modelling for surgical planning. Resistance to the adoption of less invasive techniques arose due to poor workflow integration and low yield of clinically acceptable outcomes. As many as 15%-20% of assisted surgeries to minimise invasiveness are converted to traditional open-chest surgery due to unreachable targets despite surgical planning. (Linte et al. 2010)</p>
+              
+            <p>Broadly speaking, all types of surgery have potential for AR implementations in some way, cardiovascular surgery and neurosurgery are just some examples. At the moment, <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Also called minimally invasive surgery (MIS)is a modern surgical technique in which operations are performed far from their location through small incisions (usually 0.5–1.5 cm) elsewhere in the body">laparoscopic</span> surgery is the largest potential area for AR development and this is discussed in further detail <a href="surgery.html#InvasiveSurgery">here</a>. However, AR development for different surgeries and medical specialties requires significant customisation. While there are common challenges that will aid AR development in all areas, every individual surgery presents its own unique set of complications and needs that must be addressed.</p>
+              
+            <p>The fundamental objective of AR surgical platforms is to provide the surgeon with a more intuitive relationship between the medical imaging data, the surgical field and the patient. This includes making hand-eye coordination in image guided surgery more intuitive, rather than requiring surgeons to develop new skills such as inferring depth from 2D visualisations.</p>
+              
+            <p>However, as image guided interventions and AR implementations make their way into operating rooms, there remains a fundamental dilemma regarding the extent to which surgeons can trust a navigation system or visualisations of the surgical field, especially given varying definitions of clinical accuracy and error tolerance. Therefore, while AR implementations in surgery have huge potential, in the development of new surgical visualisation and navigation paradigms, ensuring the accuracy of systems is paramount and a conservative approach to their adoption in the operating room is necessary. (Linte et al. 2010)</p>
+        </section>
+          
+          <section id="InvasiveSurgery"> 
+            <a name="InvasiveSurgery"><h3><strong>Minimally Invasive Surgery</strong></h3></a>
+            <hr>
+            
+            <p>Minimally Invasive Surgery (MIS) is a surgical technique involving the use of a fibre optic cable system (laparoscope) to view the surgical field. The technique minimises the size and number of incisions made during the procedure, thus reducing recovery time and the risk of post-operative complications such as haemorrhage and infection. Typically, 3 – 4 small incisions are made to insert the laparoscope and the other surgical instruments necessary for the specific procedure.</p>
+              
+              <p>Compared to more conventional surgical methods, MIS involves operative with a more limited view of the surgical field. Images from the laparoscope replace the surgeon’s immediate vision and there is reduced tactile feedback. (Shekhar et al. 2010) Thus, improved intra-operative visualisation techniques would constitute significantly to advancement of MIS and its potential applications.</p>
+              
+              <p>Consequently, MIS is a high potential area of development for the incorporation of augmented reality technology into medical practice. Given that cameras already replace conventional sight in the surgery, there is potential to enhance the surgeon’s vision beyond the bounds of conventional sight i.e. allow the surgeon to ‘see’ underlying vessels, bones and structures that would not be visible to the naked eye. (Linte et al. 2010) In addition, the incorporation of AR techniques to a surgery that already depends heavily on technology and image guidance is less likely to face resistance.</p>
+              
+              <p>A key challenge faced by AR developers is the delay in real time rendering of images and the difficulty of accessing image modalities in the operating theatre. Thus, most AR efforts have focused on bringing pre-operative data sets into alignment with the laparoscope’s frame of reference. (Shekhar et al. 2010) However, guiding surgeries based on old snapshots of the target anatomy would be inaccurate and unsafe, especially in surgeries involving soft tissue which can deform and shift positions i.e. the relative position of organs in the abdomen can often shift due to movement.</p>
+              
+              <p>Attempts to make AR implementations more accurate have explored the use of intra-operative imaging and continuous imaging, however the feasibility of this is restricted by the current state of technology. For example, the speed and accuracy of image registration and fusion and the limitations of the image modalities themselves. Currently, Computed Tomography (CT) imaging is the most viable for intra-operative use in terms of speed, accuracy and image quality. However, challenges include the need to reduce radiation exposure for the patient and surgical team as well as the need for contrast agents to highlight underlying vessels, all of which pose health risks. (Shekhar et al. 2010) </p>
+              
+              <p>One proposed implementation of continuous intra-operative imaging involved the combination of a pre-operative CT scan, low dose intra-operative CT images taken once per second and live images from the laparoscope. (Shekhar et al. 2010)  This allowed intra-operative anatomic changes to be registered and incorporated into the AR environment. In the example images below, the fusion of the image data augmented the laparoscopic view to include the underlying blood vessels and ribs.</p>
+              
+               <center><img width="750" height="441" src="img/MIS.jpeg"></center>
+              <p id="note">Stages of Image Fusion (Shekhar et al. 2010)</p>
+              
+               <p id="text">AR guided MIS aims to improve precision and simplify the surgeon’s interpretation of data from various modalities by providing visualisations that aid the understanding of orientation and location in the surgical field. Improvements in the field of MIS will provide better visualisation techniques for deeply recessed structures without the need for creating a direct line of sight for the surgeon using traditional open surgery techniques.(Shekhar et al. 2010) Currently, MIS is rarely considered the normal standard of care, with the exception being some types of liver surgery and cholecystectomies (gallbladder removal, which in the US is performed laparoscopically over 96% of the time. (Shekhar et al. 2010)  However, as the technology improves its applicability to many other types of surgery will increase.</p>
+              
+              <br>
+              <center><img src="img/4%20.png">
+              <p id="note">Using AR imager to place trocars (Lopez-Mir et al., 2013)</p>
+              </center>
+              <br>
+              
+              <p>For more information on the types of technical challenges that AR development faces see <a href="technical.html">here</a>. In addition, the training of surgeons in the skills needed for MIS represents a stepping stone for the development of similar AR implementations suitable for use in the operating room. Further discussion on AR in medical training can be found <a href="non-surgery.html#Education">here</a>.</p>
+              
+        </section>
+        </div>
+      
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/vendor/what-input.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

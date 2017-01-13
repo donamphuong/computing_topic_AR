@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works</title>
+    
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    
+        <div data-sticky-container>
+  <div class="sticky is-stuck" id="top-bar" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="topAnchorExample" data-btm-anchor="bottomOfContentId:bottom">
+    <nav data-magellan>
+      <ul class="dropdown menu" id="top-bar" data-dropdown-menu>
+              <li id="title"><a href="index.html">AUGMENTED REALITY</a></li>
+              <li><a href="introduction.html">Introduction</a></li>
+            <li class="active"><a href="howitworks.html">How It Works</a>
+                <ul class="menu">
+                    <li><a href="howitworks.html#Components">Components Of AR</a></li>
+                    <li><a href="howitworks.html#Achieving AR">Technical Aspects</a></li>
+                    <li><a href="howitworks.html#Modalities">Medical Image Modalities</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="surgery.html">Surgery</a>
+                <ul class="menu">
+                    <li><a href="surgery.html#Guidance">Surgical Guidance</a></li>
+                    <li><a href="surgery.html#InvasiveSurgery">Minimally Invasive Surgery</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="non-surgery.html">Non-Surgery</a>
+                <ul class="menu">
+                    <li><a href="non-surgery.html#Education">Medical Education</a></li>
+                <li><a href="non-surgery.html#Psychological">Psychological Treatments</a></li>
+                <li><a href="non-surgery.html#Physical Trauma">Physical Rehabilitation</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="technical.html">Technical Challenges</a>
+                <ul class="menu">
+                <li><a href="technical.html#SIT">Surgical Instrument Tracking</a></li>
+                <li><a href="technical.html#IR">Image Registration</a></li>
+                <li><a href="technical.html#STR">Soft Tissue Registration</a></li>
+                </ul>
+            </li>
+              <li><a href="references.html">References</a></li>
+          </ul>
+    </nav>
+   </div>
+    </div>
+    
+        <div id="mainbody">
+            <section>
+            <h1><strong>HOW IT WORKS</strong></h1>
+            <hr>
+        </section>
+          
+        <section id="Components"> 
+        <a name="Components"><h3><strong>Components of AR Implementations</strong></h3></a>
+            <hr>
+            <p>AR implementations need to be tailored for different surgery types as well as each individual surgery in response to unique patient needs. However, a general outline of the components required for an AR implementation can be created. Each step has any areas where variability can occur, and this is what makes medical applications of AR such a broad ad complex field of research.</p>
+            
+            <h5><strong>Pre-Operative Imaging</strong></h5>
+            
+            <p>In order for a surgery to make use of AR technology, the patient must first undergo pre-operative imaging so that their anatomical data can be registered and manipulated appropriately for the AR system. This process already exists in image-guided surgeries, but AR takes this data a step further by using various algorithms and visualisation techniques to create an interactive interface which the surgeon can use as a guide, rather than simply interpreting different image modalities. For more information on the different image modalities available in medicine see <a href="#Modalities">here</a>.</p>
+            
+            <h5><strong>Data Integration</strong></h5>
+            
+            <p>As part of the process of data manipulation various image segmentation, registration and fusion techniques are applied to create accurate anatomic models in 3D. In particular, Image fusion is the integration of multi-modality images into a common coordinate space for simultaneous visualisation. Instead of looking at several displays, each corresponding to individual imaging devices, a unified display integrating all the required data could streamline the surgical workflow. (Linte et al. 2010) This is the part of the process for computational efficiency and technology advance holds the most value as a common setback is the inability to compute the necessary information in real time, therefore limiting the use of AR in time-critical operating theatre environments. Improvements in this area, requires significant inter-disciplinary research between mathematicians, computer scientists and physicists in order to streamline the process of converting data gained from imaging into a more intuitively interpretable form for surgeons.</p>
+            
+            <h5><strong>Visualisation Platform</strong></h5>
+            
+            <p>Once all of this information is collated, AR surgical guidance platforms need to have an effective delivery system. There are many methods in which the data can be communicated to the surgeon, with the aim being a high fidelity representation of the surgical scene. (Linte et al. 2010) The simplest option would be the use of 2D image representation via monitors, however AR aims to create a more integrated 3D visual experience for surgeons and options such as a head mounted display and heads-up displays have been attempted. An example of a head-mounted display would be Google Glass or the Oculus Rift. Their functionality allows the user to see normal 3D reality through the device, but with the option of having further information superimposed onto the scene. (Linte et al. 2010) </p>
+            
+            <p>In addition, the possibility of gesture or voice based interaction with the system to navigate through different views of different data sets is an area for development. However, limitations of space in the operating room means that visualisation platforms should aim to be compact and un-intrusive. The need for monitors, wires, scanners would be unmanageable in a surgery. Therefore, in the development of AR systems for surgical guidance, the visualisation platform is the interface with which the surgical staff interact. Its priorities are efficient data organisation and representation, but it also needs to incredibly reliable. Its function is dependant largely on the data integration step which provides it with the data, but future applications could include uses in remote surgery and the teaching and analysis of surgical techniques after the surgery.  </p>
+          </section>
+          
+          <section id="Achieving AR"> 
+            <a name="Achieving AR"><h3><strong>Technical Aspects</strong></h3></a>
+            <hr>
+            <p>To explain augmented reality and the mathematics behind it, one must explore both 2D AR and 3D AR. <a data-open="2DAR">An example of 2D AR</a> would be the addition of virtual textures onto a surface to change its appearance and <a data-open="3DAR">an example of 3D</a> would be the incorporation of virtual 3D objects into reality. For a greater sense of realism, a 2D texture must morph when the surface shifts and the observer’s point of view is altered. In order to calculate the transformations of the texture in the observer’s eye, affine transformations must be used. As for 3D objects, they must also transform with regards to changes in point of view, with of course one more dimension to alter. Lastly, another factor that will need to be taken into account of is photometric change (change pertaining to light intensity) in the environment, again for an improved sense of realism.</p> 
+            
+            <div class="reveal" id="2DAR" data-reveal>
+                <img src="img/2DAR.jpg" alt="An example of 2D AR">
+                <p style="text-align: center; padding-top:10px">An example of 2D Augmented Reality (Anon .2015)</p>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <div class="reveal" id="3DAR" data-reveal>
+                <img src="img/3DAR.jpg" alt="An example of 3D AR">
+                <p style="text-align: center; padding-top:10px">An example of 3D Augmented Reality (Anon .2015)</p>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+       
+            <p>An affine transformation is one that preserves collinearity (with all points that initially formed a line before the transformation, still form a line). [Weisstein E., n.d.] Said transformation allows for “Rotation, Shearing, <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="the ability to scale with regards to different axes by different amount">Anisotropic Scaling</span> and Translation.”. In 2D, the transformation matrix is:</p>
+            <center><img class="thumbnail" src="img/eq1.png" alt="This is supposed to be the formula" style="height:100px; width:364px"></center>
+            <ul style="text-align:center; padding-left:250px; padding-right:250px">
+                <li>where (u,v) are the transformed coordinates of the point</li>
+                <li>where (x,y) are the original coordinates of the point</li>
+                <li>where (a11, …, a23) are variables that may be altered to achieve the required transformation</li>
+            </ul>
+            
+            <p>In 3D, there may be two different transformation matrices depending on whether one would want a virtual image or virtual object. The following is for a virtual image:</p>
+            <center><img class="thumbnail" src="img/eq2.png" alt="This is supposed to be the formula" style="height:100px; width:364px"></center>
+            <ul style="text-align:center; padding-left:250px; padding-right:250px">
+                <li>where (u,v) are the transformed coordinates of the point as a 2D image</li>
+                <li>where (x,y,z) are the original coordinates of the point of a 3D object
+</li>
+                <li>where (a11, …, a24) are variables that may be altered to achieve the required transformation</li>
+            </ul>
+            <p>For a virtual object, there would be a 4 x 4 matrix instead of a 3 x 4 matrix with 4 more variables (a31, …, a34).<a href="https://www.youtube.com/watch?v=IRk8kX285vw">  For an explanation for these equations, the referenced videos may be useful. [Affine Transformation 2D to 3D, 2013]</a></p>
+   
+              <p>Now to move onto the question of how this may be applied to the medical field. Mapping 2D textures onto surfaces may be used in a multitude of ways. One may be to map text and information about the patient onto an <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Head Mounted Display">HMD</span> that a surgeon may use during surgery. Another may be to <a href="https://www.christiemed.com/products/our-technology">display veins in real time</a> onto the skin of a patient so that the surgeon knows exactly where to make incisions to ensure minimum damage. Earlier, it was noted that realism was an important factor in AR. In entertainment, realism aids in providing a greater sense of immersion to the user. In the medical field, realism translates to higher quality resources in surgical and other medical procedures. Many more examples will be analyzed throughout this website.
+</p>
+        </section>
+        
+          <section id="Modalities"> 
+            <a name="Modalities"><h3><strong>Medical Image Modalities</strong></h3></a>
+            <hr>
+            
+            <p>The development of medical imaging techniques has allowed surgeons to get an idea of the surgical field prior to the surgery as well as facilitating the development of image guided surgery techniques i.e. aiding the surgeon in locating tumours seen on pre-operative scans, or surgical instrument placement and navigation. In general, imaging has two main purposes, pre-operative images are used for diagnosis and surgical planning while intra-operative images are used to enhance the surgeon’s view of the surgical field and guide their decisions. For AR implementations, it is the intra-operative mediums that are most important as it is necessary for the information being overlaid to be accurate and up to date. Therefore, the aim would be to have continuous 3D imaging capabilities and use the resulting data for AR. However, that technology is yet to be achieved through current image modalities.</p>
+              
+            <p>Magnetic Resonance Imaging (MRI) uses a strong magnetic field and radio waves to create images of the organs and tissues within the body. Its operation is based on the human body’s water composition and the atomic structure of those water molecules. One magnet in the MRI scanner first makes the water molecules to align in one direction, north or south. The second magnet then turned on and off in pulses causing each atom to fluctuate between alignment and its original random state. The scanner detects these changes and a computer processes the information to create a detailed cross sectional image. (Lam 2016)</p>
+              
+              <br>
+            <center><img src="img/1%20MRI_blackandwhite.png">
+              <p id="note">Magnetic Resonance Imaging (Lam .2016)</p></center>  
+                <br>
+              
+            <p>Computed Tomography (CT) scanners take a series of 2D X-ray images of the area from various angles around a single axis of rotation, then uses digital geometry processing to construct a 3D image. It emits a series of narrow beams of ionising radiation (x-rays) through the human body as it moves through an arc. CT scans produce very detailed 3D images and can be separated into its component ‘slices’ for further analysis. The use of a contrast agent i.e. barium which appears white on the scan, may be injected or ingested to highlight the target area. (Nordqvist 2016)</p>
+              
+              <br>
+            <center><img src="img/2%20brain-ct.jpg">
+              <p id="note">CT scans (Nordqvist .2016)</p>
+              </center> 
+              <br>
+              
+              <p>Each image modality has its advantages and are often more suited to different purposes. For example, a CT scan is better for looking at cancer, pneumonia and brain haemorrhages, but a brain tumour is better seen on a MRI. A CT scan does not show <a data-open="tendons">tendons and ligaments</a>, while an MRI scan does. (Nordqvist 2016) A significant practical difference is that a CT scanner uses ionising radiation while a MRI scanner does not. Given that radiation is a known <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="A carcinogen is any substance, radionuclide, or radiation that is an agent directly involved in causing cancer.">carcinogen</span>, it is in the interest of the patient to reduce exposure to radiation from medical scans during the diagnostic, pre-operative planning and intra-operative stages.</p>
+              
+              <p>This reduces the feasibility of using a CT scanner for direct guidance in surgery and for continuous 3D imaging in AR implementations considering the increased radiation dose of repeated or continuous use during prolonged procedures. MRI remains too slow to be a viable option for real-time implementations and its magnetic field means the development of magnetic resonance compatible surgical equipment would be necessary. Real time 3D ultrasonography is available, however its image quality is suboptimal compared to CT and MR imaging. (Linte et al. 2010)</p>
+              
+              <div class="reveal" id="tendons" data-reveal>
+                <img src="img/download.jpeg" alt="Tendons and Ligaments">
+                <p style="text-align: center; padding-top:10px">Tendons and Ligaments (Zakta®, 2012)</p>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+              
+        </section>
+        </div>  
+      
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/vendor/what-input.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

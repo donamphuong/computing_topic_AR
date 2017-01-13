@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Challenges</title>
+    
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    
+    <div data-sticky-container>
+  <div class="sticky is-stuck" id="top-bar" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="topAnchorExample" data-btm-anchor="bottomOfContentId:bottom">
+    <nav data-magellan>
+      <ul class="dropdown menu" id="top-bar" data-dropdown-menu>
+              <li id="title"><a href="index.html">AUGMENTED REALITY</a></li>
+              <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="howitworks.html">How It Works</a>
+                <ul class="menu">
+                    <li><a href="howitworks.html#Components">Components Of AR</a></li>
+                    <li><a href="howitworks.html#Achieving AR">Technical Aspects</a></li>
+                    <li><a href="howitworks.html#Modalities">Medical Image Modalities</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="surgery.html">Surgery</a>
+                <ul class="menu">
+                    <li><a href="surgery.html#Guidance">Surgical Guidance</a></li>
+                    <li><a href="surgery.html#InvasiveSurgery">Minimally Invasive Surgery</a></li>
+                </ul>
+            </li>
+              
+              <li><a href="non-surgery.html">Non-Surgery</a>
+                <ul class="menu">
+                    <li><a href="non-surgery.html#Education">Medical Education</a></li>
+                <li><a href="non-surgery.html#Psychological">Psychological Treatments</a></li>
+                <li><a href="non-surgery.html#Physical Trauma">Physical Rehabilitation</a></li>
+                </ul>
+            </li>
+              
+              <li class="active"><a href="technical.html">Technical Challenges</a>
+                <ul class="menu">
+                <li><a href="technical.html#SIT">Surgical Instrument Tracking</a></li>
+                <li><a href="technical.html#IR">Image Registration</a></li>
+                <li><a href="technical.html#STR">Soft Tissue Registration</a></li>
+            </ul>
+            </li>
+              <li><a href="references.html">References</a></li>
+          </ul>
+    </nav>
+   </div>
+    </div>
+    
+        <div id="mainbody">
+            <h1><strong>TECHNICAL CHALLENGES</strong></h1>
+          <hr>
+            <p>At present, AR in medicine is largely research based. Practical applications are few and often experimental. Its potential in this field is extensive and there are definitely significant needs and opportunities for its implementation. However, before AR systems becomes commonplace in medical practice, there are many technical challenges that its developers face.
+ 
+            AR is a process of data manipulation and representation that is potentially error-generating. Therefore, uncertainty will always exist due to the variability in its fundamental elements which include: definition of accuracy, image acquisition, registration techniques, computer and software interfaces, localisation devices, intraoperative use, integration of real time data, tissue displacement and human interaction. (Shuhaiber n.d.) A further discussion of specific challenges that have been the subject of significant research follows.</p>
+          
+          <section> 
+            <a name="SIT"><h3><strong>Surgical Instrument Tracking</strong></h3></a>
+            <hr>
+            
+            <p>Surgical instrument tracking is a practice that is already in use in operating rooms to ensure all surgical instruments are accounted for during and after a surgery. The basic idea is the use of GPS tags to locate them. However, a more complex implementation involves tracking the position and orientation of surgical instruments to guide their placement during surgery. This potentially allowed the tracked instruments to be represented in the visualisation of image guidance data. (Feuerstein 2008)</p>
+              
+            <p>Tracking systems typically used in medical practice are mechanical, optical or electromagnetic and each has their advantages and disadvantages. In this application, the the location of the tip of the instrument is usually the most significant as they are interacting with the tissue i.e. forceps and scissors. For rigid instruments, optical or mechanical systems can be used, but for flexible instruments the loss of a rigid line of sight means electromagnetic systems must be used. (Feuerstein 2008)</p>
+              
+            <p>In some cases, the ability to project placement of surgical instruments based on entry position can also be useful. For example, in neurosurgery, the surgeon can use instrument tracking systems to interact with some visualisation of the patient’s skull and brain (pre-operative or intra-operative) to infer where to insert the instrument to perform the resection most effectively, thus reducing error and unnecessary tissue disturbances.</p>
+              
+            <p>Surgical instrument tracking developments also have applications in surgical education. Through the use of augmented reality, virtual models can be superimposed upon or composited with the real world such that students practice performing surgery with real instruments on a virtual model provided by the AR interface. This ability to track surgical instruments is important to ensure accurate representation, as well as allowing the simulation to generate measurable performance outcomes answering questions such as ‘how well did the students use the instruments’ not with observations but quantitative data. (Cano et al. 2008)</p>
+              
+            <br>
+            <center><video controls src="8%20ProMIS%20Instrument%20Tracking%20XYZ-2.mp4"></video>
+            <p id="note">ProMIS Instrument Tracking System (Haptica Surgical Simulation AR. 2015)</p></center>
+            <br>
+              
+            <p>Currently, surgical instrument tracking usually uses some kind of marker tracking to focus tracking algorithms and increase computational speed. However, as with other AR related processes, the development complex instrument tracking to the standard required for adoption in operating rooms faces hurdles such as real-time applicability, reliability and accuracy. (Cano et al. 2008)</p>
+            </section>
+            
+            <section>
+                <a name="IR"><h3><strong>Image Registration</strong></h3></a>
+                <hr>
+                
+                <p>Image registration is the process of integrating the information from different image modalities, bringing them into alignment and establishing a spatial correspondence between the different features seen on different modalities. (Vidal et al. 2006) The core challenge in the introduction of AR systems into operating rooms is the registration of pre-operative images with the intra-operative image. (Mountney et al. 2014)</p>
+                
+                <p>Rigid registration techniques use anatomically identical structures i.e. bones that exist in both images to create the spatial correspondence.  This forms the basis for landmark-based registrations techniques, which uses a set of corresponding points in two images to compute the spatial transformation between them. Landmark registration is divided into extrinsic methods, which use foreign objects introduced into the imaged space i.e. markers and intrinsic methods which based on information provided by the natural image alone i.e. bone. (Vidal et al. 2006)</p>
+                
+                <p>Other registration techniques include: surface or segmentation based methods, which minimise some distance functions between two curves or surfaces extracted from both images; voxel similarity based algorithms, which use the intensities of the images involved using various similarity criteria. More technical details on the how these registrations work can be found <a href="http://ww2.odu.edu/~kiftekha/ECE783_883/image%20registration.pdf">here</a>. (Vidal et al. 2006)</p>
+                
+                <p>Non-rigid registration without constant landmarks such as bone is difficult to achieve in real time with sufficient accuracy and reliability. It encompasses the area of soft-tissue registration which is a key area that AR applications need to address. A popular approach is to obtain an initial approximation of the area using rigid registration methods followed by a non-rigid refinement step. (Vidal et al. 2006) Other methods are discussed in more detail separately.</p>
+            </section>
+            
+            <section>
+                <a name="STR"><h3><strong>Soft Tissue Registration</strong></h3></a>
+                <hr>
+                
+                <p>In laparoscopic surgery, AR techniques aim to overlay vessels, tumours and cutting planes onto laparoscopic video or onto head mounted displays. However, current implementations are limited to a rigid registration of pre-operative anatomy from pre-operative scans onto the intra-operative image. Research into developing an automatic, real-time, non-rigid registration and tracking of intra and pre-operative data seeks to make AR implementations more accurate and applicable in the operating room. (Haouchine et al. 2013)</p>
+                
+                <p>In the context where AR implementations make use of pre-operative imaging, delivering AR to the operating room can be split into many smaller challenges. One of these is soft tissue registration wherein AR implementations need to be able to represent the continuous changes in the shape of soft tissue (i.e. organs) that occur during the surgery due to respiration and tool-tissue interaction. This has led to research into deformable tissue modelling, tissue tracking and surface registration. (Mountney et al. 2014)</p>
+                
+                <div class="media-object">
+                <div class="media-object-section">
+                    <div id="note" style="float:right" >
+                        <img width="400px" height="180px" src="img/9.png">
+                        <p id="note">Adaptive soft-tissue modelling with cutting and grasping (Vidal et al. 2006)</p> 
+                    </div>
+                    
+                    <div class="media-object-section">
+                        <p id="text">Deformable tissue modelling seeks to enable the simulation of tissue behaviour. Currently, there is currently a trade-off between models accurate enough to estimate correct tumour position and those that ensure a stable simulation and fast computation. (Haouchine et al. 2013) In general, soft-tissue modelling algorithms can be classified as either geographically based or physically based. Geometric models adjust shape by changing the position of some control points or adjusting the parameters of an implicit function defining the shape. While often fast, these methods may bear little or no resemblance to physically plausible deformation. (Vidal et al. 2006)</p>
+                        <p style="margin-left:-20px">Physically based methods attempt to mimic reality by embedding the material properties and characteristic behaviour of the object into a model. Examples include the mass-spring technique, where objects are constructed as a set of mass points or particles connected by damped springs and the particles move based on the forces applied. This method if relatively fast and easy to implement when compared with another physical based method, the Finite Element Method, which is capable of producing results of greater accuracy. It works by subdividing the object into a mesh of simple elements such as tetrahedrons and each element is assigned physical properties. Its high computational complexity restricts its use mainly to applications where real time interaction is not required i.e. surgical planning. (Vidal et al. 2006)</p>
+                    </div>
+                </div>
+            </div>
+                
+                <p></p>
+                
+                <p>Efforts to improve the modelling of soft tissue have concentrated on pre-computing deformations; furthermore, as reliance of pre-processing increases the ability to respond to dynamic changes becomes even more restricted. (Vidal et al. 2006) Current techniques for accurate registration are computationally inefficient for use during time-critical interventional procedures due to the challenge of computing the models and updating the registration in a non-rigid fashion in real time.(Linte et al. 2010) Therefore, many challenges remain to be solved in order to obtain real time full automatic registration methods for deformable organs.(Haouchine et al. 2013)</p>
+            </section>
+        </div>
+    
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/vendor/what-input.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+#mainbody {
+    padding-left: 50px; 
+    padding-right:50px; 
+    padding-top:110px;
+    padding-bottom: 30px;
+}
+
+hr {
+    width: 100%;
+}
+
+.container{
+    display: inline-block;
+    align-self: center;
+}
+
+video.fullscreen { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+.menu {
+    margin-left: 20px;
+}
+
+#title {
+    width: 280px;
+    text-align: center;
+    padding-left:30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    color: whitesmoke;
+}
+
+#box {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 97%;
+    min-width: 90%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: lightskyblue;
+    color: lightskyblue;
+}
+
+#box #text {
+    width:400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+}
+
+#box h1 {
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#box h5 {
+    margin-top: 10px;
+    width: 150px;
+    border-style: solid;
+    border-width: 3px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#box h5 a {
+    color: lightskyblue;
+}
+
+#box p {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    font-size: 12px;
+}
+
+#box p a {
+    color: aliceblue;
+}
+
+.thumbnail {
+    height: 200px;
+    width: 400px;
+}
+
+.media-object-section #text {
+    margin-left: -20px;
+}
+
+#note {
+    font-size: 12px;
+    text-align: center;
+}
+
+#top-bar {
+    padding-left: -10px;
+    background-color: #6c6c67;
+    font-size: 15px;
+}
+
+#top-bar li a {
+    color: whitesmoke;
+    width: 180px;
+}
+
+#top-bar li ul a {
+    color: #6c6c67;
+}
+
+#mainbody h1 {
+    color:#6c6c67;
+}
+
+#button {
+    width : 300px;
+    text-align: center;
+}
+
+.button {
+    background-color: #454544; 
+}
+
+#extend {
+    width: 30px;
+}
+
+form {
+    width: 280px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top:10px;
+}
